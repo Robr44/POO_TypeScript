@@ -4,7 +4,7 @@ class Cuenta{
     private tipoCuenta: string;
     private numeroCuenta: number
 
-    // Constructor que inicializa los atributos
+    // Constructor
     constructor(nombreParam: string, cantidadParam: number, tipoCuentaParam: string, numeroCuentaParam: number){
         this.nombre = nombreParam;
         this.cantidad = cantidadParam;

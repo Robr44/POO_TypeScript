@@ -9,11 +9,11 @@ var Calculadora = /** @class */ (function () {
     Calculadora.prototype.restar = function (num1, num2) {
         return num1 - num2;
     };
-    // Metodo multiplicacion entre números.
+    // Metodo para multiplicacion entre números.
     Calculadora.prototype.multiplicar = function (num1, num2) {
         return num1 * num2;
     };
-    // Metodo division entre numeos
+    // Metodo para division entre numeos
     Calculadora.prototype.dividir = function (num1, num2) {
         // Condicional para ver si no se divide entre 0
         if (num2 === 0) {
@@ -39,10 +39,10 @@ var Calculadora = /** @class */ (function () {
     };
     return Calculadora;
 }());
-var calcularNumeros = new Calculadora();
-console.log("Suma:", calcularNumeros.sumar(5, 3));
-console.log("Resta:", calcularNumeros.restar(10, 4));
-console.log("Multiplicación:", calcularNumeros.multiplicar(6, 7));
-console.log("División:", calcularNumeros.dividir(20, 5));
-console.log("Potencia:", calcularNumeros.potencia(2, 8));
-console.log("Factorial:", calcularNumeros.factorial(2));
+var calculadora = new Calculadora();
+console.log("Suma:", calculadora.sumar(5, 5));
+console.log("Resta:", calculadora.restar(10, 5));
+console.log("Multiplicación:", calculadora.multiplicar(7, 7));
+console.log("División:", calculadora.dividir(20, 2));
+console.log("Potencia:", calculadora.potencia(2, 8));
+console.log("Factorial:", calculadora.factorial(2));

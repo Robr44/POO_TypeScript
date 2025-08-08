@@ -5,7 +5,7 @@ abstract class Persona{
     private telefono: string;
     private edad: number;
 
-    // Constructor que inicializa los atributos
+    // Constructor
     constructor(nombreParam: string, apellidoparam: string, direccionParam: string, telefonoParam: string, edadParam: number){
         this.nombre = nombreParam;
         this.apellido = apellidoparam;
@@ -68,11 +68,12 @@ abstract class Persona{
     abstract mostrarDatos(): void;
 }
 
+
 // Clase empleado que hereda de la clase Perona
 class Empleado extends Persona{
      private sueldo: number;
 
-     //Constructor que inicializa atributos de clase Persona y Empleado
+     //Constructor
     constructor(nombre: string, apellido: string, direccion: string, telefono: string, edad: number, sueldo: number) {
         super(nombre, apellido, direccion, telefono, edad);
         this.sueldo = sueldo;

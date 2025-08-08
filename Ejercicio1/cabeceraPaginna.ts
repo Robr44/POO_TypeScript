@@ -6,23 +6,19 @@ class CabeceraPagina {
     private fuente: string;
     private posicionTitulo: string;
 
-
+    // Constructor para obtener propiedades
     constructor(tituloParam: string, colorParam: string, fuenteParam: string) {
         this.titulo = tituloParam;
         this.color = colorParam;
         this.fuente = fuenteParam;
     }
 
-    cabecera(tituloParam: string, colorParam: string, fuenteParam: string): void {
-        this.titulo = tituloParam;
-        this.color = colorParam;
-        this.fuente = fuenteParam;
-    }
-
+    // Metodo para asignar la posicion del titulo
     posicionT(posicionTituloParam: "centrado" | "derecha" | "izquierda"): void {
         this.posicionTitulo = posicionTituloParam;
     }
 
+    // Metodo para mostrar el contenido de la cabecera
     mostrarCabecera(): void {
         console.log("Título:", this.titulo);
         console.log("Color:", this.color);
@@ -31,7 +27,6 @@ class CabeceraPagina {
     }
 }
 
-// Ejemplo de uso
-const cabecera = new CabeceraPagina("Mi Página", "azul", "Arial");
+const cabecera = new CabeceraPagina("Cabecera de Pagina", "verde", "Arial");
 cabecera.posicionT("derecha");
 cabecera.mostrarCabecera();

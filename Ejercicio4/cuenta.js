@@ -1,5 +1,5 @@
 var Cuenta = /** @class */ (function () {
-    // Constructor que inicializa los atributos
+    // Constructor
     function Cuenta(nombreParam, cantidadParam, tipoCuentaParam, numeroCuentaParam) {
         this.nombre = nombreParam;
         this.cantidad = cantidadParam;

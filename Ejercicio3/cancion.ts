@@ -1,14 +1,16 @@
 class Cancion{
-    public titulo: string;
-    public genero: string;
+    private titulo: string;
+    private genero: string;
     private autor: string;
 
+    // Constructor
     constructor(tituloParam: string, generoParam: string, autorParam: string) {
         this.titulo = tituloParam;
         this.genero = generoParam;
         this.autor = autorParam;
     }
 
+    // Getter y Setter para autor
     getAutor(): string {
         return this.autor;
     }
@@ -17,6 +19,7 @@ class Cancion{
         this.autor = autorParam;
     }
 
+    // Metodo para mostrar los datos de la cancion
     mostrarDatosCancion(): void {
         console.log("Título:", this.titulo);
         console.log("Género:", this.genero);
@@ -24,6 +27,5 @@ class Cancion{
     }
 }
 
-// Ejemplo de uso
 const cancion = new Cancion("Un siglo sin Ti", "Pop", "Chayanne");
 cancion.mostrarDatosCancion();

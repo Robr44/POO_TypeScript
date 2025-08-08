@@ -11,13 +11,12 @@ class Calculadora{
     }
 
 
-     // Metodo multiplicacion entre números.
-
+     // Metodo para multiplicacion entre números.
     multiplicar(num1: number, num2: number): number {
         return num1 * num2;
     }
 
-    // Metodo division entre numeos
+    // Metodo para division entre numeos
     dividir(num1: number, num2: number): number {
         // Condicional para ver si no se divide entre 0
         if (num2 === 0) {
@@ -45,11 +44,11 @@ class Calculadora{
     }
 }
 
-const calcularNumeros = new Calculadora();
-console.log("Suma:", calcularNumeros.sumar(5, 3));
-console.log("Resta:", calcularNumeros.restar(10, 4));
-console.log("Multiplicación:", calcularNumeros.multiplicar(6, 7));
-console.log("División:", calcularNumeros.dividir(20, 5));
-console.log("Potencia:", calcularNumeros.potencia(2, 8));
-console.log("Factorial:", calcularNumeros.factorial(2));
+const calculadora = new Calculadora();
+console.log("Suma:", calculadora.sumar(5, 5));
+console.log("Resta:", calculadora.restar(10, 5));
+console.log("Multiplicación:", calculadora.multiplicar(7, 7));
+console.log("División:", calculadora.dividir(20, 2));
+console.log("Potencia:", calculadora.potencia(2, 8));
+console.log("Factorial:", calculadora.factorial(2));
 
